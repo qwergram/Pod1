@@ -9,4 +9,7 @@ TITANIC_TRAINING_DATA = '/Users/danielzwelling/Documents/coding_stuff/code_fello
 TITANIC_TESTING_DATA = '/Users/danielzwelling/Documents/coding_stuff/code_fellows/python-401/Pod1/test.csv'
 titanic_dataframe = pandas.read_csv(TITANIC_TRAINING_DATA, header=0)
 bigness_of_data = len(titanic_dataframe)
-print(bigness_of_data)
+
+
+# What's the average age of Any Titanic Passenger
+average_age_of_passenger = titanic_dataframe['Age'].mean()
